@@ -320,7 +320,12 @@ p:nth-of-type(2n) {
   width: 1.5rem;
   height: 1.5rem;
 }
-
+.carousel-control-prev {
+    left: -31px !important;
+}
+.carousel-control-next {
+    right: -120px !important;
+}
 /* Contact Page */
 .form-control {
   border: 3px solid;
