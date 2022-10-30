@@ -321,7 +321,7 @@ p:nth-of-type(2n) {
   height: 1.5rem;
 }
 .carousel-control-prev {
-    left: -31px !important;
+    left: -35px !important;
 }
 .carousel-control-next {
     right: -120px !important;
