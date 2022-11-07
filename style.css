@@ -202,10 +202,11 @@ nav .active {
   border: 5px solid;
   border-image-slice: 1;
   background: var(--gradient) !important;
-  -webkit-text-fill-color: transparent !important;
   border-image-source: var(--gradient) !important;
   text-decoration: none;
   transition: all 0.4s ease;
+  color: beige;
+  
 }
 
 .btn:hover,
@@ -215,6 +216,7 @@ nav .active {
   border: 5px solid #fff !important;
   box-shadow: #222 1px 0 10px;
   text-decoration: underline;
+  color: white !important;
 }
 
 main h1 {
