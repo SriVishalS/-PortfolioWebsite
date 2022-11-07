@@ -75,7 +75,6 @@ nav {
   border: 5px solid;
   border-image-slice: 2;
   background: linear-gradient(to top left, #dd2476 20%, #ff512f 80%) !important;
-  -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   border-image-source: linear-gradient(
     to top left,
@@ -176,7 +175,6 @@ nav .active {
   border-left: 5px solid;
   border-image-slice: 2;
   background: linear-gradient(#dd2476 10%, #ff512f 90%) !important;
-  -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   border-image-source: linear-gradient(to left, #dd2476, #ff512f) !important;
 }
@@ -204,7 +202,6 @@ nav .active {
   border: 5px solid;
   border-image-slice: 1;
   background: var(--gradient) !important;
-  -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   border-image-source: var(--gradient) !important;
   text-decoration: none;
@@ -214,7 +211,6 @@ nav .active {
 .btn:hover,
 .btn:focus {
   background: var(--gradient) !important;
-  -webkit-background-clip: none !important;
   -webkit-text-fill-color: #fff !important;
   border: 5px solid #fff !important;
   box-shadow: #222 1px 0 10px;
@@ -321,17 +317,16 @@ p:nth-of-type(2n) {
   height: 1.5rem;
 }
 .carousel-control-prev {
-    left: -35px !important;
+  left: -35px !important;
 }
 .carousel-control-next {
-    right: -125px !important;
+  right: -125px !important;
 }
 /* Contact Page */
 .form-control {
   border: 3px solid;
   border-image-slice: 1;
   background: var(--gradient) !important;
-  -webkit-background-clip: text !important;
   -webkit-text-fill-color: #999 !important;
   border-image-source: var(--gradient) !important;
   transition: all 0.3s ease !important;
@@ -341,7 +336,6 @@ p:nth-of-type(2n) {
 .form-control:focus {
   box-shadow: 0px 0px 7px #666 !important;
 
-  -webkit-background-clip: none !important;
   -webkit-text-fill-color: rgba(250, 250, 250, 0.9) !important;
   border: 3px solid #fff !important;
 }
