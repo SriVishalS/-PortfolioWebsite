@@ -50,9 +50,7 @@ nav {
   font-weight: 600 !important;
   background: var(--gradient) !important;
   background-clip: text !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-
+text-decoration: none;
   line-height: 2rem; /* prevents hover effect from moving parent element */
   border: 5px solid transparent;
   animation: bounce 0.5s ease;
@@ -63,7 +61,8 @@ nav {
 
 #resume a,
 #resume-mobile a {
-  text-decoration: none;
+  text-decoration: none !important;
+  color: #fff !important;
 }
 
 #resume:hover,
@@ -75,12 +74,8 @@ nav {
   border: 5px solid;
   border-image-slice: 2;
   background: linear-gradient(to top left, #dd2476 20%, #ff512f 80%) !important;
-  -webkit-text-fill-color: transparent !important;
-  border-image-source: linear-gradient(
-    to top left,
-    #dd2476 20%,
-    #ff512f 80%
-  ) !important;
+
+  color: white !important;
 }
 
 .navbar-toggler-icon {
