@@ -50,7 +50,7 @@ nav {
   font-weight: 600 !important;
   background: var(--gradient) !important;
   background-clip: text !important;
-text-decoration: none;
+  text-decoration: none;
   line-height: 2rem; /* prevents hover effect from moving parent element */
   border: 5px solid transparent;
   animation: bounce 0.5s ease;
@@ -171,6 +171,7 @@ nav .active {
   border-image-slice: 2;
   background: linear-gradient(#dd2476 10%, #ff512f 90%) !important;
   border-image-source: linear-gradient(to left, #dd2476, #ff512f) !important;
+  color: #fff !important;
 }
 
 /* Media Queries */
@@ -200,7 +201,6 @@ nav .active {
   text-decoration: none;
   transition: all 0.4s ease;
   color: beige;
-  
 }
 
 .btn:hover,
