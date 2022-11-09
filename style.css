@@ -170,7 +170,6 @@ nav .active {
   border-left: 5px solid;
   border-image-slice: 2;
   background: linear-gradient(#dd2476 10%, #ff512f 90%) !important;
-  -webkit-text-fill-color: transparent !important;
   border-image-source: linear-gradient(to left, #dd2476, #ff512f) !important;
 }
 
