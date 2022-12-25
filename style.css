@@ -22,11 +22,8 @@ html {
   display: none;
 }
 
-/* Navigation */
 
-nav {
-  background: #111;
-}
+
 
 .bg-dark {
   background: #111 !important;
