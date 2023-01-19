@@ -10,9 +10,10 @@
   <link rel="stylesheet" href="style.css">
   <title>Sri Vishal S.</title>
   <link rel="icon" href="./Assets/myLogo.png">
+  <script src="script.js" defer></script>
 </head>
 
-<body>
+<body onload="myFunction()">
   <nav class="navbar sticky-top d-lg-none navbar-dark bg-dark">
     <div class="navbar-brand d-flex-column">SRI VISHAL S.</div>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -43,7 +44,7 @@
 
       <ul class="nav row p-0 mt-4" id="social-mobile">
         <li class="col-sm-6 nav-item">
-          <a class="nav-link" href="mailto:srivishalcareers.com"><i class="fas fa-envelope"></i> Email Me
+          <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Email Me
           </a>
         </li>
 
@@ -92,7 +93,7 @@
           <p class="text-center p-4">Thank you for visiting my portfolio!</p>
           <ul class="nav" id="social">
             <li class="nav-item">
-              <a class="nav-link" href="mailto:srivishalCareers@gmail.com"><i class="fas fa-envelope"></i> Email Me
+              <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Email Me
               </a>
             </li>
             <li class="nav-item">
@@ -103,9 +104,6 @@
           </ul>
         </div>
       </nav>
-
-
-
       <main role="main" class="col-md-8 m-auto p-4">
         <div id="about" class="p-4 text-right">
           <h1>Hi there!</h1>
@@ -124,12 +122,13 @@
           </div>
 
         </div>
+      </main>
     </div>
   </div>
+  <div class="loadWrapper">
+    <span class="loader"></span>
   </div>
-  </main>
-  </div>
-  </div>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -139,14 +138,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-  <script>
-    let icon = document.getElementById('icon');
 
-    icon.addEventListener('click', function () {
-      icon.classList.toggle('fa-times');
-      icon.classList.toggle('fa-bars');
-    });
-  </script>
 
 </body>
 

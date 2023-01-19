@@ -19,33 +19,14 @@
 
   <!-- EmailJS Configuration to send emails -->
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js" defer></script>
   <script type="text/javascript">
     (function () {
-      emailjs.init('user_SWDP3xHeS6xzJCiL6uUW3');
+      emailjs.init('UFtmWQutshDI_D3Oo');
     })();
   </script>
-  <script type="text/javascript">
 
-    window.onload = function () {
-      document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        // generate a five digit number for the contact_number variable
-        this.contact_number.value = Math.random() * 100000 | 0;
-        // these IDs from the previous steps
-        emailjs.sendForm('service_ybl24mf', 'contact_form', this)
-          .then(function () {
-            console.log('SUCCESS!');
-            let alertSuccess = document.getElementById('success');
-            alertSuccess.classList.add('show');
-          }, function (error) {
-            console.log('FAILED...', error);
-            let alertFail = document.getElementById('failed');
-            alertFail.classList.add('show');
-          });
-      });
-    }
-  </script>
 
 
 
@@ -84,7 +65,7 @@
 
       <ul class="nav row p-0 mt-4" id="social-mobile">
         <li class="col-sm-6 nav-item">
-          <a class="nav-link" href="mail to:srivishalCareers@gmail.com"><i class="fas fa-envelope"></i> Email Me
+          <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Email Me
           </a>
         </li>
 
@@ -127,7 +108,7 @@
           <p class="text-center p-4">Thank you for visiting my portfolio!</p>
           <ul class="nav" id="social">
             <li class="nav-item">
-              <a class="nav-link" href="srivishalCareers@gmail.com"><i class="fas fa-envelope"></i> Email Me
+              <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Email Me
               </a>
             </li>
 
@@ -168,7 +149,7 @@
             Success! Thank you for reaching out, I'll be in contact with you shortly! <span role="img">🎉</span>
           </div>
 
-          <input class="btn" type="submit" value="submit"></input>
+          <button class="btn"   id="subBtn" onclick="sendMail()">SUBMIT</button>
         </form>
       </main>
     </div>
@@ -185,14 +166,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-  <script>
-    let icon = document.getElementById('icon');
 
-    icon.addEventListener('click', function () {
-      icon.classList.toggle('fa-times');
-      icon.classList.toggle('fa-bars');
-    });
-  </script>
 
 </body>
 
