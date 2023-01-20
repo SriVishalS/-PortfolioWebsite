@@ -32,7 +32,7 @@
 
 </head>
 
-<body>
+<body onload="myFunction()">
   <!-- Mobile Nav -->
   <nav class="navbar sticky-top d-lg-none navbar-dark bg-dark">
     <div class="navbar-brand d-flex-column">SRI VISHAL S.</div>
@@ -149,10 +149,13 @@
             Success! Thank you for reaching out, I'll be in contact with you shortly! <span role="img">🎉</span>
           </div>
 
-          <button class="btn"   id="subBtn" onclick="sendMail()">SUBMIT</button>
+          <button class="btn" id="subBtn" onclick="sendMail()">SUBMIT</button>
         </form>
       </main>
     </div>
+  </div>
+  <div class="loadWrapper">
+    <span class="loader"></span>
   </div>
 
   <!-- Optional JavaScript -->
