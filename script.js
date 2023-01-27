@@ -17,7 +17,6 @@ sendMail = () => {
   usrObj.message.length > 0
     ? emailjs.send("service_w5utfbw", "template_jixb2bl", usrObj).then(
         function () {
-          debugger;
           console.log("SUCCESS!");
           alertSuccess.classList.add("show");
         },
@@ -30,7 +29,7 @@ sendMail = () => {
 };
 var myVar;
 myFunction = () => {
-  myVar = setTimeout(loader, 700);
+  myVar = setTimeout(loader, 1000);
 };
 loader = () => {
   document.querySelector(".loadWrapper").style.display = "none";
