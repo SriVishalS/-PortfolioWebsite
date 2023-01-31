@@ -41,7 +41,7 @@
       <span id="icon" class="navbar-toggler-icon fas fa-bars"></span>
     </button>
     <div class="collapse navbar-collapse text-center" id="navbarText">
-      <ul class="navbar-nav mx-auto mb-4">
+      <ul class="navbar-nav mx-auto mb-4  d-flex flex-column justify-content-center align-items-center">
         <li class="nav-item">
           <a class="nav-link" href="index.html">About</a>
         </li>
@@ -53,6 +53,11 @@
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item border border-3 border-danger"
+          style="background: linear-gradient(to top left, #278ea5 20%, #21e6c1 80%); width: 200px; border-radius: 50px;">
+          <a class="nav-link" href="signup.html">Create Account
+          </a>
         </li>
       </ul>
 
@@ -90,7 +95,7 @@
               <a href="./Assets/CV-SRIVISHAL S..pdf"><i class="fas fa-download"></i> Download Resume</a>
             </p>
           </div>
-          <ul class="nav flex-column mx-auto pb-4 text-center">
+          <ul class="nav flex-column mx-auto pb-4 text-center justify-content-center align-items-center">
             <li class="nav-item">
               <a class="nav-link" href="index.html">About </a>
             </li>
@@ -102,6 +107,11 @@
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="contact.html">Contact </a>
+            </li>
+            <li class="nav-item border border-3 border-danger"
+              style="background: linear-gradient(to top left, #278ea5 20%, #21e6c1 80%); width: 200px; border-radius: 50px;">
+              <a class="nav-link" href="signup.html">Create Account
+              </a>
             </li>
           </ul>
 
@@ -132,12 +142,14 @@
           <div class="form-group">
             <input type="hidden" name="contact_number">
             <label for="name">Name</label>
-            <input type="text" class="form-control text-decoration-none" id="name" placeholder="Your Name"
-              name="user_name" required />
+            <div id="CONTAINERINPUT">
+              <input placeholder="Type for validate" type="text" id="name">
+            </div>
 
             <label for="email">Email address</label>
-            <input type="email" class="form-control p-2" id="email" placeholder="name@example.com" name="user_email"
-              required />
+            <div id="CONTAINERINPUT">
+              <input placeholder="Your Email" type="text" id="email">
+            </div>
           </div>
 
           <div class="form-group mb-4">
@@ -149,7 +161,7 @@
             Success! Thank you for reaching out, I'll be in contact with you shortly! <span role="img">🎉</span>
           </div>
 
-          <button class="btn" id="subBtn" onclick="sendMail()">SUBMIT</button>
+          <button class="btn" id="subBtn" type="button" onclick="sendMail()">SUBMIT</button>
         </form>
       </main>
     </div>
