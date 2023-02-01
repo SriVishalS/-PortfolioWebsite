@@ -168,8 +168,8 @@ h1 {
 }
 
 .form-radio {
-  margin: 0 -10px;
-  margin-bottom: 40px;
+  margin: -44px -10px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-around;
 }
@@ -291,12 +291,7 @@ input[type="checkbox"]:not(old) + label > span {
   padding: 15px 20px;
   font-size: 13px;
   font-weight: 600;
-  font-family: Poppins;
   border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
 }
 .submit:hover {
   background: #0c85d0;

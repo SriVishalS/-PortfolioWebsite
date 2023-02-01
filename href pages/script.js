@@ -19,13 +19,15 @@ sendMail = () => {
         function () {
           console.log("SUCCESS!");
           alertSuccess.classList.add("show");
+          window.location.href = "../index.html";
+          let navigate = setTimeout(navToHome,10000);
         },
         function (error) {
           console.log("FAILED...", error);
           alertFail.classList.add("show");
         }
       )
-    : alert("You Havent Filled Your Login Creadentials Right");
+    : alert("You Havent Filled Your  Creadentials Right");
 };
 var myVar;
 myFunction = () => {
@@ -34,3 +36,6 @@ myFunction = () => {
 loader = () => {
   document.querySelector(".loadWrapper").style.display = "none";
 };
+navToHome =()=>{
+      window.location.href = "index.html";
+}
