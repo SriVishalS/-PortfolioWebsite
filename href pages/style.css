@@ -254,7 +254,6 @@ nav .active {
   transition: all 0.4s ease;
   color: white;
   border-radius: 50px;
-  width: 115px;
   font-weight: 900;
   text-transform: capitalize;
   font-size: 15px;

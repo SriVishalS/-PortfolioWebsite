@@ -20,7 +20,7 @@ sendMail = () => {
           console.log("SUCCESS!");
           alertSuccess.classList.add("show");
           window.location.href = "../index.html";
-          let navigate = setTimeout(navToHome,10000);
+          let navigate = setTimeout(navToHome, 10000);
         },
         function (error) {
           console.log("FAILED...", error);
@@ -36,6 +36,35 @@ myFunction = () => {
 loader = () => {
   document.querySelector(".loadWrapper").style.display = "none";
 };
-navToHome =()=>{
-      window.location.href = "index.html";
-}
+navToHome = () => {
+  window.location.href = "index.html";
+};
+document
+  .getElementById("download-button")
+  .addEventListener("click", function () {
+    if (
+      window.matchMedia("(display-mode: standalone)").matches ||
+      window.navigator.standalone === true
+    ) {
+      // Already installed as PWA
+      return;
+    }
+    if (window.matchMedia("(display-mode: browser)").matches) {
+      // Not installed as PWA, show install prompt
+      if (
+        window.confirm("Do you want to install this web app on your device?")
+      ) {
+        // Show the install prompt
+        window.deferredPrompt.prompt();
+        // Wait for the user to respond to the prompt
+        window.deferredPrompt.userChoice.then(function (choiceResult) {
+          if (choiceResult.outcome === "accepted") {
+            console.log("User accepted the install prompt");
+          } else {
+            console.log("User dismissed the install prompt");
+          }
+          window.deferredPrompt = null;
+        });
+      }
+    }
+  });
