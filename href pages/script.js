@@ -31,7 +31,7 @@ sendMail = () => {
 };
 var myVar;
 myFunction = () => {
-  myVar = setTimeout(loader, 1000);
+  myVar = setTimeout(loader, 2000);
 };
 loader = () => {
   document.querySelector(".loadWrapper").style.display = "none";
